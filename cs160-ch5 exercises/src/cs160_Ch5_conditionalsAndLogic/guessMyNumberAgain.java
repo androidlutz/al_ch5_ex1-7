@@ -10,7 +10,7 @@
 
 
 
-package cs160_wk5_lec2_ProgramFlow;
+package cs160_Ch5_conditionalsAndLogic;
 
 
 import java.util.Random;
@@ -35,18 +35,49 @@ public class guessMyNumberAgain {
 		           // Generate a random number
 		        Random random = new Random();
 		        int Generatednumber = random.nextInt(100) + 1;
-		        System.out.println("The number I was thinking of is: " + Generatednumber);   
+		     
+		            	
+		        public static void keepGuessing(int guess) {
+		        		        
+		       if (Yournumber < Generatednumber) { 
+		        	System.out.println("Too low, guess again");
+		        	int guessagain = scan.nextInt();	
+		         }		       
+		         //else {
+		        	//keepGuessing();
+		         //}		        	
+		        	if (Yournumber > Generatednumber) {		        		
+		        	}
+		        	 System.out.println("Too high, guess again");	          
+		        	 int guessagain = scan.nextInt();
+		         
+		        	 //else {
+				        	//keepGuessing();
+				        // }
+		        	
+		        	if(Generatednumber == Yournumber) {
+					System.out.println("Congratulations, you guessed correctly!" + Generatednumber); 
+		       
+		        	}
+	}
+}
+}	
+		        	
+		        	
+		       // System.out.println("The number I was thinking of is: " + Generatednumber);   
 		        
-		        //What's the difference?
+		       
+		        
+		        
+		        
+		        
+		        
+		        /*What's the difference?
 		          System.out.println("You were off by: " + Math.abs(Yournumber - Generatednumber));        
 		          System.out.println("Guess again!");
 			        int newGuess = scan.nextInt();
-			   
-			       
-
-			}
-		}
-		
+			   */
+			      
 	
 /*
  * i want to import a scanner
