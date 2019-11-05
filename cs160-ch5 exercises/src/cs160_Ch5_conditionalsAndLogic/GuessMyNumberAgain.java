@@ -1,7 +1,13 @@
-
+//HEADER
+//Program Name: Chapter 5 Exercise 5
+//Author: Andrew Lutz
+//Class: CS160 Fall 2019
+//Date: 11/3/2019
+//Description: 99 Bottles exercise
 
 
 package cs160_Ch5_conditionalsAndLogic;
+
 
 
 import java.util.Random;
@@ -15,7 +21,7 @@ public class GuessMyNumberAgain {
 		 Random random = new Random();
 	      int answer = random.nextInt(100 + 1);
 	      guessNumber(answer);
-	}    
+	}  
 	
 	public static void guessNumber(int answer) {
 		
@@ -33,13 +39,13 @@ public class GuessMyNumberAgain {
 	        //compare the two numbers
 	        if(yourNumber < answer) {
 	        	System.out.println("Too low, guess again");
-		     //   int newguessNumber = enter.nextInt();
+		       int newguessNumber = enter.nextInt();
 
 	        }
 	        if 
 	        	(yourNumber > answer) {
 	        	System.out.println("Too high, guess again");
-		      //  int newguessNumber = enter.nextInt();
+		        int newguessNumber = enter.nextInt();
 
 	        }
 	        else {
